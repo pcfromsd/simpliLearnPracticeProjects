@@ -32,15 +32,15 @@ public class ArithmaticCalculator {
 	
 	public static void main (String args[]) {
 	
-		Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 		
-		float result = 0;
-		String firstNumber;
-		String secondNumber;
-		char operation;
+        float result = 0;
+        String firstNumber;
+        String secondNumber;
+        char operation;
 	    final char exitChar = 'X';
 	    
-		while (true) {
+        while (true) {
            System.out.println("Enter the 1st number (x to exit): ");
            firstNumber = scanner.next();
            if ((firstNumber.substring(0, 1).toUpperCase()).equals(String.valueOf(exitChar))) 
@@ -74,9 +74,9 @@ public class ArithmaticCalculator {
            }
            
            System.out.println("The result is: " + result + "\n");
-		}
+        }
 		
-		System.out.println("Done.");
-		scanner.close();
-	}
+        System.out.println("Done.");
+        scanner.close();
+    }
 }
