@@ -44,7 +44,6 @@ public class ValidateEmail {
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Enter the email to validate: ");
 		inputEmail = scanner.next().trim();
-		//System.out.println('*'+inputEmail+'*');
 		
 		for (int i=0; i<emails.length; i++) {		
 			if (emails[i].equals(inputEmail)) {
