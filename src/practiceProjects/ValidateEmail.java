@@ -46,18 +46,17 @@ public class ValidateEmail {
 		inputEmail = scanner.next().trim();
 		//System.out.println('*'+inputEmail+'*');
 		
-		for (int i=0; i<emails.length; i++) {
-		
+		for (int i=0; i<emails.length; i++) {		
 			if (emails[i].equals(inputEmail)) {
 				matchFound = true;
 				break;
 			}
-	    }
+		}
 		
-        if (matchFound)
+		if (matchFound)
 			System.out.println("It's a match.");
-        else
-		    System.out.println("It's not a match.");
+		else
+        	System.out.println("It's not a match.");
         
     }
 }
