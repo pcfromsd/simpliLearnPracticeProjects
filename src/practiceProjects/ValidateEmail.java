@@ -37,7 +37,8 @@ public class ValidateEmail {
 
 	public static void main(String[] args) {
 
-		String[] emails = {"user1@simlilearn.com", "user2@simlilearn.com", "user3@simlilearn.com"};
+		String[] emails = {"user1@simlilearn.com", "user2@simlilearn.com", "user3@gmail.com",
+		                   "user4@hotmail.com", "abc@xyz.net", "jsmith@anything.org"};
 		String inputEmail;
 		boolean matchFound = false;
 		
