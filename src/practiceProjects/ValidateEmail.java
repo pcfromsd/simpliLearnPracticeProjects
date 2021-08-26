@@ -35,28 +35,31 @@ import java.util.Scanner;
 
 public class ValidateEmail {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		String[] emails = {"user1@simlilearn.com", "user2@simlilearn.com", "user3@gmail.com",
-		                   "user4@hotmail.com", "abc@xyz.net", "jsmith@anything.org"};
-		String inputEmail;
-		boolean matchFound = false;
+        String[] emails = {"user1@simlilearn.com", "user2@simlilearn.com", 
+                           "user3@gmail.com", "user4@hotmail.com", 
+                           "abc@xyz.net", "jsmith@anything.org"};
+        String inputEmail;
+        boolean matchFound = false;
 		
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("Enter the email to validate: ");
-		inputEmail = scanner.next().trim();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the email to validate: ");
+        inputEmail = scanner.next().trim();
 		
-		for (int i=0; i<emails.length; i++) {		
-			if (emails[i].toUpperCase().equals(inputEmail.toUpperCase())) {
-				matchFound = true;
-				break;
-			}
-		}
+        for (int i=0; i<emails.length; i++) {		
+            if (emails[i].toUpperCase().equals(inputEmail.toUpperCase())) {
+                matchFound = true;
+                break;
+            }
+        }
 		
-		if (matchFound)
-			System.out.println("It's a match.");
-		else
+        if (matchFound)
+            System.out.println("It's a match.");
+        else
         	System.out.println("It's not a match.");
+        
+        scanner.close();
         
     }
 }
