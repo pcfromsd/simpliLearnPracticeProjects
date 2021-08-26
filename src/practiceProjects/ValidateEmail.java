@@ -46,7 +46,7 @@ public class ValidateEmail {
 		inputEmail = scanner.next().trim();
 		
 		for (int i=0; i<emails.length; i++) {		
-			if (emails[i].equals(inputEmail)) {
+			if (emails[i].toUpperCase().equals(inputEmail.toUpperCase())) {
 				matchFound = true;
 				break;
 			}
